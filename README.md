@@ -1,2 +1,2 @@
 # week4
-One error line 42, but if I change it the error moves... Im open for any suggestions.
+Adventure: All Errors are fixed, all scenarios work have fun!
