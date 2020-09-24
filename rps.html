@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<title>Rock/Paper/Scissors</title>
+	
+
+		</head>
+	<body>
+	<body style="background-color:D3D3D3">
+	<style>
+	h1{text-align: center;}
+	p{text-align: center;}
+	p{font-weight: bold;}
+	/*gets rid of werid spacing*/
+	line-height: 5px;
+	</style>
+		<h1>Rock/Paper/Scissors! You vs. Computer!</h1>
+		<p>You'll be playing against the computer</p>
+		<p>Show them why Humans are superior!</p>
+		<p>Key: Rock = 0, Paper = 1, Scissors = 2.</p>
+		<p>You choose: <span id="userchoice"></span> </p>
+		<p>Computer choose: <span id="compchoice"></span> </p>		
+		
+		<p>Drum Roll Please!!!!!</p>
+		<p> And the Winner is!: <span id="thewinner"></span> </p>	
+		
+
+		<table style="border:4px solid black;margin-left:auto;margin-right:auto;padding:2px;border-spacing:20px;">
+
+		
+		</tr>
+		<tr align="center">
+			<td width="200px">
+			Rock
+			
+			</td>
+			<td width="200px">
+			Paper
+			
+			</td>
+			<td width="200px">
+			Scissors
+			
+			</td>
+		<tr align="center">
+			<td width="200px">
+			Beats: Scissors			
+			</td>
+			<td width="200px">
+			Beats: Rock			
+			</td>
+			<td width="200px">
+			Beats: Paper	
+			</td>		
+		</tr>
+		<tr align="center">
+			<td width="200px">
+			Losses to: Paper			
+			</td>
+			<td width="200px">
+			Losses to: Scissors			
+			</td>
+			<td width="200px">
+			Losses to: Rock			
+			</td>		
+		</tr>
+		<tr align="center">
+			<td width="150px">
+			<img src= "rock.jpg" height="200" width= "200"/>
+			</td>
+			<td width="200px">
+			<img src= "paper.jpg" height= "200" width= "200"/>
+			</td>
+			<td width="200px">
+			<img src= "scissors.png" height= "200" width = "200"/>
+			</td>
+		</tr>
+		
+	</table> 
+		
+		
+		<script>
+
+		
+		var choices = ["rock", "paper", "scissors"];
+		var user_choices = ["rock", "paper", "scissors"];
+		
+		var empty_winner = document.getElementById("thewinner").innerText;
+		var empty_userchoice = document.getElementById("userchoice").innerText;
+		var empty_compchoice = document.getElementById("compchoice").innerText;
+		var winner;
+
+		thewinner.innerText = winner;
+
+		
+		
+		alert("Time is ticking get ready! Will you pick Rock Paper or Scissors!");	
+
+		user_input = prompt ("Please type: rock = 0, paper = 1 amd scissors = 2");
+		
+		
+			
+		var comp_input = Math.floor(Math.random() * 3);
+		console.log("Rock, Paper, or Scissors! You Choose: " + user_choices[user_input]);			
+		
+	
+		console.log("Rock, Paper, or Scissors! Computer Choose: ", choices[comp_input]);
+		
+		userchoice.innerText = user_input;
+		compchoice.innerText = comp_input;
+	
+		if(user_input == 0 && comp_input == 2){
+			winner = "YOU";
+			
+		}else if(user_input == 1 && comp_input == 0){
+			winner = "YOU";
+			
+		}else if(user_input == 2 && comp_input == 1){
+			winner = "YOU";
+			
+		}else if(user_input == comp_input){
+			winner = "TIE";
+							
+		}else if(user_input == 2 && comp_input == 0){
+			winner = "COMPUTER";
+		
+		}else if(user_input == 0 && comp_input == 1){
+			winner = "COMPUTER";
+		
+		}else if(user_input == 1 && comp_input == 2){
+			winner = "COMPUTER";
+		}else{
+			console.log("Drum roll please!");
+		}	
+		console.log("See Page for Winner!");	
+		
+				
+		thewinner.innerText = winner;
+
+
+	</script>
+	</body>
+</html>
